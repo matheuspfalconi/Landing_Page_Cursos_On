@@ -264,7 +264,6 @@ input, button {
 	max-width: 1200px;
 	width: 80%;
 	height: 100%;
-	border: 2px solid red;
 }
 
 .div_title_benefits {
@@ -280,7 +279,6 @@ input, button {
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 30px;
-	border: 1px solid blue;
 }
 
 .list_benefits {
