@@ -1,3 +1,26 @@
+/*===================================Fontes Gerais===================================/
+Body - 16px
+H1 - 32px
+H2 - 
+H3 - 
+SPAN - 14px
+P - 16px
+A - 16px
+
+*/
+
+/*===================================Breakpoints Gerais===================================/
+
+@media (min-width:320px) { smartphones, portrait iPhone, portrait 480x320 phones (Android) }
+@media (min-width:480px) { smartphones, Android phones, landscape iPhone }
+@media (min-width:600px) { portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) }
+@media (min-width:801px) { tablet, landscape iPad, lo-res laptops ands desktops }
+@media (min-width:1025px) { big landscape tablets, laptops, and desktops }
+@media (min-width:1281px) { hi-res laptops and desktops }
+
+/*
+
+
 /*===================================Fontes===================================*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat&family=Poppins:wght@300&display=swap');
 
@@ -91,6 +114,8 @@ input, button {
 .section_home {
 	width: 100%;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
 
 	background-color: #00072b;
 	background-position: center;
@@ -101,11 +126,11 @@ input, button {
 }
 
 .content_home {
-	width: 100%;
+	max-width: 1200px;
+	width: 80%;
 	height: 100%;
 	display: flex;
 	flex-wrap: nowrap;
-	padding: 0 200px;
 }
 
 .l_div_home, .r_div_home {
@@ -121,7 +146,7 @@ input, button {
 }
 
 .div_logo {
-	width: 200px;
+	width: 100%;
 	height: auto;
 	text-align: right;
 	line-height: 0.8;
@@ -129,11 +154,12 @@ input, button {
 }
 
 .logo {
+	width: 200px;
 	font-size: 60px;
 }
 
 .div_text_l {
-	width: 500px;
+	max-width: 500px;
 	height: auto;
 }
 
@@ -142,7 +168,7 @@ input, button {
 }
 
 .title_l {
-	width: 300px;
+	max-width: 300px;
 }
 
 .text_l {
@@ -156,7 +182,7 @@ input, button {
 }
 
 .div_text_r {
-	width: 400px;
+	width: 100%;
 	height: auto;
 	text-align: center;
 }
@@ -226,21 +252,25 @@ input, button {
 .section_benefits {
 	width: 100%;
 	height: auto;
+	display: flex;
+	justify-content: center;
+
 	background-color: orange;
 	color: black;
 	text-align: center;
 }
 
 .content_benefits {
-	width: 100%;
+	max-width: 1200px;
+	width: 80%;
 	height: 100%;
-	padding: 50px 200px;
+	border: 2px solid red;
 }
 
 .div_title_benefits {
 	width: 100%;
 	height: auto;
-	padding: 30px 0;
+	padding: 30px;
 }
 
 .div_list_benefits {
@@ -249,7 +279,8 @@ input, button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 20px;
+	padding: 30px;
+	border: 1px solid blue;
 }
 
 .list_benefits {
@@ -303,98 +334,59 @@ input, button {
 
 /*===================================Responsividade===================================*/
 
-@media(max-width: 1304px) {
-	.content_benefits {
-		padding: 50px 100px;
+@media(max-width: 1500px) {
+	.content_home {
+		width: 100%;
+		padding: 0 30px;
 	}
 }
 
-@media(max-width: 1281px) {
-	.content_home {
-		padding: 50px 100px;
-	}
-
+@media(max-width: 1133px) {
 	.content_benefits {
-		padding: 50px 50px;
+		width: 100%;
 	}
 }
 
 @media(max-width: 1025px) {
-	.content_home {
-		padding: 50px 50px;
-	}
-}
-
-@media(max-width: 801px) {
 	.section_home {
 		height: auto;
 	}
 
 	.content_home {
+		width: 80%;
 		flex-wrap: wrap;
-		padding: 50px 100px;
+		justify-content: center;
+		padding: 50px 30px
 	}
 
-	.l_div_home, .r_div_home {
+	.l_div_home {
+		display: flex;
 		width: 100%;
 		height: auto;
-		padding: 20px 0px;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+		justify-content: flex-start;
 	}
 
-	.div_text_r {
+	.r_div_home {
 		width: 100%;
-		text-align: center;
 	}
+}
 
-	.div_list_benefits {
-		margin-top: 20px;
-	}
-
-	.list_benefits {
-		width: 500px;
-	}
-
-	.item_benefits {
+@media(max-width: 801px) {
+	.content_home {
 		width: 100%;
-		height: auto;
-		padding: 0 30px;
-		font-size: 1.3em;
-	}
-
-	.div_icon_benefits {
-		width: 100px;
-		height: 100px;
-	}
-
-	.icon_benefits > span {
-		font-size: 50px;
-	}
-
-	.div_text_benefits {
-		margin-top: 10px;
+		padding: 50px 30px;
+		border: 1px solid red;
 	}
 }
 
 @media(max-width: 600px) {
-	.content_home, .content_benefits {
-		padding: 50px;
-	}
-
-	.div_title_benefits {
-		padding: 0;
-	}
-
-	.item_benefits {
-		padding: 0;	
+	.content_home {
+		padding: 50px 10px;
 	}
 }
 
 @media(max-width: 480px) {
-	.content_home, .content_benefits {
-		padding: 30px;
-	}
-
-	.div_text_l, .title_l {
-		width: 100%;
-	}
+	
 }
