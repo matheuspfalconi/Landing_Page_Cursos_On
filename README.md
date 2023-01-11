@@ -23,9 +23,9 @@ Html and CSS
 
 - Smartphones
 
-![Captura de Tela 2023-01-11 às 20 22 42](https://user-images.githubusercontent.com/33550514/211939564-f8e8c61c-cc76-47e8-a620-f1156b87afe3.png)</br>
-![Captura de Tela 2023-01-11 às 20 22 54](https://user-images.githubusercontent.com/33550514/211939567-bfa296c0-8cb3-40e8-9931-0f33e3cea878.png)</br>
-![Captura de Tela 2023-01-11 às 20 23 04](https://user-images.githubusercontent.com/33550514/211939569-24e35768-523f-48b1-b548-eadb28c4573c.png)</br>
+![Captura de Tela 2023-01-11 às 20 22 42](https://user-images.githubusercontent.com/33550514/211939564-f8e8c61c-cc76-47e8-a620-f1156b87afe3.png)
+![Captura de Tela 2023-01-11 às 20 22 54](https://user-images.githubusercontent.com/33550514/211939567-bfa296c0-8cb3-40e8-9931-0f33e3cea878.png)
+![Captura de Tela 2023-01-11 às 20 23 04](https://user-images.githubusercontent.com/33550514/211939569-24e35768-523f-48b1-b548-eadb28c4573c.png)
 
 # Author
 
